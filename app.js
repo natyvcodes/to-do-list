@@ -15,7 +15,7 @@ function defaultTask() {
     })
     const removeButton = tContainer.querySelector('.dlt-task');
     removeButton.addEventListener('click', () => {
-        AllTasks.remove(tContainer)
+       removeTask(tContainer)
     });
 }
 
