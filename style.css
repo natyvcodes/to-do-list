@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+body {
+    font-family: "SUSE", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/backgroundimage.jpg");
+    background-repeat: no-repeat;
+}
+header h1 {
+    text-align: center;
+    color: #ffffff;
+}
+.container {
+    width: 90%;
+    max-width: 600px;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.list-container {
+    border-radius: 10px;
+    background-color: #c8cbd5;
+    padding: 30px;
+}
+
+.list-container h2 {
+    padding: 0;
+    margin: 0;
+}
+.task-input {
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    font-family: "SUSE", sans-serif;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    border: none;
+    font-family: "SUSE", sans-serif;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 80px;
+    cursor: pointer;
+}
+
+/* CHECKBOX*/
+.form-control {
+    font-size: 1.8em;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 0.8em;
+    height: 0.8em;
+    border: 0.09em solid currentColor;
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.50em;
+    height: 0.55em;
+    border-radius: 100%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em black;
+}
+input[type="checkbox"]:checked::before {
+        transform: scale(1);
+    
+}
+.t-item-header{
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+    overflow:auto;
+
+}
+.text {
+   margin: 0;
+   margin-left: 10px;
+   cursor: pointer;
+}
+
+.t-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+ 
+}
+.visibility {
+    display: none;
+}
+.dlt-task {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
